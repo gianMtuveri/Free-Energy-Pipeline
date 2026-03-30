@@ -40,9 +40,12 @@ This pipeline assumes output from the HADDOCK web server.
 ### Required files
 
 Refined docking poses, for example:
+
 `
 complex_1.pdb  
+
 complex_2.pdb  
+
 complex_3.pdb  
 `
 
