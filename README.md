@@ -331,4 +331,8 @@ Gian Marco Tuveri
 PhD candidate in Biophysics  
 University of Barcelona  
 
+## Reference
+
+This pipeline is derived from and extends the methodologies developed in my PhD thesis on molecular modeling and docking analysis of LRP1.
+
 ---
