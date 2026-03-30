@@ -43,23 +43,20 @@ Refined docking poses, for example:
 
 ```
 complex_1.pdb  
-
 complex_2.pdb  
-
 complex_3.pdb  
 ```
 
 ### Critical requirement
 
-Each PDB must contain a HADDOCK energies line, for example:
+Each PDB must contain a HADDOCK energies line, for example  
 
-REMARK energies ...
+`REMARK energies ...`
 
-This line is used to extract the electrostatic component required by PRODIGY-LIG.
+This line is used to extract the electrostatic component required by PRODIGY-LIG:
 
-The extraction follows the original notebook logic:
 
-line.split()[8]
+`line.split()[8]`
 
 Therefore, the formatting must remain consistent with HADDOCK outputs.
 
@@ -80,21 +77,23 @@ https://github.com/haddocking/prodigy-lig
 
 Clone and install:
 
+```
 git clone https://github.com/haddocking/prodigy-lig.git  
 cd prodigy-lig  
-pip install .  
+pip install .
+```
 
 Depending on your environment, you may need a dedicated conda environment or installation from source.
 
 ### Verify installation
 
-prodigy_lig --help
+`prodigy_lig --help`
 
 ### PATH configuration
 
 If the executable is not found:
 
-export PATH=$PATH:/path/to/prodigy_lig
+`export PATH=$PATH:/path/to/prodigy_lig`
 
 ### Important note
 
@@ -107,7 +106,7 @@ It should not be treated as a standard Python dependency in pyproject.toml.
 
 The pipeline runs:
 
-prodigy_lig -c A B:LIG -i complex_X.pdb -e <electrostatic>
+`prodigy_lig -c A B:LIG -i complex_X.pdb -e <electrostatic>`
 
 Where:
 
