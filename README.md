@@ -106,7 +106,7 @@ It should not be treated as a standard Python dependency in pyproject.toml.
 
 The pipeline runs:
 
-`prodigy_lig -c A B:LIG -i complex_X.pdb -e <electrostatic>`
+```prodigy_lig -c A B:LIG -i complex_X.pdb -e <electrostatic>```
 
 Where:
 
@@ -305,6 +305,7 @@ The core logic lives in the src/ package.
 
 ## Repository Structure
 
+```
 docking_pipeline/  
 ├── pyproject.toml  
 ├── README.md  
@@ -319,7 +320,8 @@ docking_pipeline/
 │       ├── free_energy.py  
 │       └── pipeline.py  
 └── notebooks/  
-    └── analysis.ipynb  
+    └── analysis.ipynb
+```
 
 ---
 
